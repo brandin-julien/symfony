@@ -1,0 +1,23 @@
+leaderboard_homepage:
+    path:     /
+    defaults: { _controller: LeaderboardBundle:Default:index }
+
+leaderboard_deathsmiles:
+    path:     /deathsmiles
+    defaults: { _controller: LeaderboardBundle:pink:Deathsmiles }
+
+leaderboard_crimzon_clover:
+    path:     /crimzon_clover/{type}
+    defaults: { _controller: LeaderboardBundle:NotPink:crimzon_clover , type: typeZ }
+
+leaderboard_ikaruga:
+    path:     /ikaruga/{color}
+    defaults: { _controller: LeaderboardBundle:NotPink:ikaruga, color: white }
+
+leaderboard_tsunderes:
+    path:     /tsunderes
+    defaults: { _controller: LeaderboardBundle:Bonus:Tsunderes }
+
+leaderboard_yaoi:
+    path:     /yaoi
+    defaults: { _controller: LeaderboardBundle:Bonus:Yaoi }
